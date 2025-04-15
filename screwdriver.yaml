@@ -1,6 +1,6 @@
 jobs:
   sample-job:
-    require: [~pr,~commit]
+    requires: [~pr,~commit]
     image: node:lts
     steps:
       - echo-hello: echo hello
