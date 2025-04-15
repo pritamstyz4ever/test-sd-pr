@@ -1,6 +1,6 @@
 jobs:
-  test-pr-close:
-    require: [~pr[closed],~commit]
+  sample-job:
+    require: [~pr,~commit]
     image: node:lts
     steps:
       - echo-hello: echo hello
