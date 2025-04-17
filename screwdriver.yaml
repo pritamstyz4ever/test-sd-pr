@@ -8,5 +8,5 @@ jobs:
     requires: [~pr-closed]
     image: node:lts
     steps:
-      - echo-hello: echo "pr closed"
+      - echo-hello: echo "pr closed test"
   
