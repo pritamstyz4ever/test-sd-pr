@@ -1,3 +1,6 @@
 Test PR Closed workflow
-- start pipeline from pr-closed on PR closed but not merged
-- start pipeline from commit and pr-closed when pr merged
+1. Closed:
+- start pipeline from pr-closed
+
+2. Merged
+- start pipeline from pr-closed
