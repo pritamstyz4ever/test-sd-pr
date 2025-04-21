@@ -5,7 +5,7 @@ jobs:
     steps:
       - echo-hello: echo "hello world 4"
   close-job:
-    requires: [~prclosed]
+    requires: [~pr-closed]
     image: node:lts
     steps:
       - echo-hello: echo "pr closed"
