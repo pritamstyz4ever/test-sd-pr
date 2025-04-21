@@ -9,5 +9,7 @@ jobs:
     image: node:lts
     steps:
       - echo-hello: echo "pr closed workflow"
-      - check-meta: meta get sd
+      - check-meta: |
+          meta get sd
+          meta get sd.pr
   
