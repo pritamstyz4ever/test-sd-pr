@@ -3,7 +3,7 @@ jobs:
     requires: [~pr,~commit]
     image: node:lts
     steps:
-      - echo-hello: echo "hello world 2"
+      - echo-hello: echo "hello world 3"
   close-job:
     requires: [~prclosed]
     image: node:lts
