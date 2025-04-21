@@ -8,5 +8,6 @@ jobs:
     requires: [~pr-closed]
     image: node:lts
     steps:
-      - echo-hello: echo "pr closed"
+      - echo-hello: echo "pr closed workflow"
+      - check-meta: meta get sd
   
