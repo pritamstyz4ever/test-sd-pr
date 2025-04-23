@@ -7,6 +7,8 @@ jobs:
   close-job:
     requires: [~pr-closed]
     image: node:lts
+    environment:
+      USER_SHELL_BIN: bash
     steps:
       - echo-hello: echo "pr closed workflow"
       - check-meta: |
