@@ -21,6 +21,5 @@ jobs:
       steps:
         - check-meta: |
             echo $SD_PULL_REQUEST
-            meta get sd
             meta get sd.pr
   
