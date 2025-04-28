@@ -23,5 +23,10 @@ jobs:
       steps:
         - check-meta: |
             echo $SD_PULL_REQUEST
-            meta get sd.pr
+            meta get sd.pr    
+  job-B:
+      requires: [~pr:release, ~pr-closed:release]
+      image: node:lts
+      steps:
+        - check-meta: meta get sd
   
