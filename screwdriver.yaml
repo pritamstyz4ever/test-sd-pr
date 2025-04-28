@@ -12,6 +12,15 @@ jobs:
     steps:
       - echo-hello: echo "pr closed workflow"
       - check-meta: |
-          meta get sd
           meta get sd.pr
+  job-A:
+      requires: [~pr, ~pr-closed]
+      image: node:lts
+      environment:
+        USER_SHELL_BIN: bash
+      steps:
+        - check-meta: |
+            echo $SD_PULL_REQUEST
+            meta get sd
+            meta get sd.pr
   
