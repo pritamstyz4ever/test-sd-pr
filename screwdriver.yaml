@@ -1,3 +1,6 @@
+shared:
+  annotations:
+    screwdriver.cd/restrictPR: all
 jobs:
   sample-job:
     requires: [~pr,~commit]
