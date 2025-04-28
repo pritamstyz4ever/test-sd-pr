@@ -1,5 +1,4 @@
-shared:
-  annotations:
+annotations:
     screwdriver.cd/restrictPR: all
 jobs:
   sample-job:
