@@ -4,3 +4,6 @@
 
 2. Merged
 - start pipeline from ~pr-closed.
+
+3. restrictPR: all
+- Do not start PR closed event 
