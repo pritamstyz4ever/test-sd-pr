@@ -28,5 +28,6 @@ jobs:
       requires: [~pr:release, ~pr-closed:release]
       image: node:lts
       steps:
+        - data: echo "branch release triggered"
         - check-meta: meta get sd
   
