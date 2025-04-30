@@ -1,5 +1,5 @@
-annotations:
-    screwdriver.cd/restrictPR: fork
+# annotations:
+    # screwdriver.cd/restrictPR: fork
 jobs:
   sample-job:
     requires: [~pr,~commit]
