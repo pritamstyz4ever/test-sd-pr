@@ -1,4 +1,4 @@
-## Test PR Closed workflow, test
+## Test PR Closed workflow
 1. Closed:
 - start pipeline from ~pr-closed.
 
