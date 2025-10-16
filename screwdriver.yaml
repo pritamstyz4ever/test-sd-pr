@@ -7,6 +7,13 @@ jobs:
     steps:
       - echo-hello: echo "hello world 4"
       - wait: sleep 10m
+  invalid-job:
+    requires: [~pr,~commit]
+    image: node:abc
+    steps:
+      - echo-hello: echo "hello world 4"
+      - wait: sleep 10m
+
   close-job:
     requires: [~pr-closed]
     image: node:lts
