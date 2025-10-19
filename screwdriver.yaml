@@ -14,6 +14,12 @@ jobs:
       - echo-hello: echo "hello world 4"
       - wait: sleep 10m
 
+  large-image:
+   requires: [~pr,~commit]
+   image: pytorch/pytorch:latest
+   steps:
+      - echo-hello: echo "hello world 4"
+
   close-job:
     requires: [~pr-closed]
     image: node:lts
