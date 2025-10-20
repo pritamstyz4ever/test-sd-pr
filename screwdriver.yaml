@@ -16,7 +16,7 @@ jobs:
 
   large-image:
    requires: [~pr,~commit]
-   image: pytorch/pytorch:latest
+   image: tensorflow/tensorflow:latest-gpu
    steps:
       - echo-hello: echo "hello world 4"
 
