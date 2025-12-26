@@ -13,6 +13,12 @@ jobs:
     blockedBy: [~blocked-job]
     steps:
       - main: echo "hello"
+  blocked-job-2:
+    requires: [~commit, ~pr]
+    image: node:lts
+    blockedBy: [~blocked-job]
+    steps:
+      - main: echo "hello world"
   sample-job:
     requires: [~pr,~commit]
     image: node:lts
