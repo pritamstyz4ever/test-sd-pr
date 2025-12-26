@@ -2,12 +2,14 @@
     # screwdriver.cd/restrictPR: fork
 jobs:
   blocked-job:
+    image: node:lts
     requires: [~commit, ~pr]
     steps:
       - main: sleep 5
     
   blocked-job-1:
     requires: [~blocked-job]
+    image: node:lts
     blockedBy: [~blocked-job]
     steps:
       - main: echo "hello"
