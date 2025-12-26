@@ -5,7 +5,7 @@ jobs:
     image: node:lts
     requires: [~commit, ~pr]
     steps:
-      - main: sleep 5
+      - main: sleep 2m
     
   blocked-job-1:
     requires: [~blocked-job]
